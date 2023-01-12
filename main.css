@@ -1,0 +1,161 @@
+.about{
+  font-size: 25px;
+  text-align: left;
+  margin-top: 380px;
+  margin-left: 600px;  
+  padding: 30px;  
+}
+
+.intro{
+  font-size: 20px
+  text-align: left;
+  top: 150px;
+  margin-right: 80px;
+  
+}
+
+.Signature{
+  position: absolute; 
+  top: 100px;
+  left: 50px;
+}
+
+.animate-opacity{animation:opac 1.5s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.Blackbox{
+  position: absolute; 
+  top: 395px;
+  left: 100px;
+}
+
+.Profile{
+  position: absolute;
+  top: 380px;
+  left: 110px;
+  
+}
+
+nav{
+  float: right;
+  position: absolute;
+  top: 100px; 
+  right: 80px; 
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 50px; 
+  position: relative; 
+}
+
+nav a{
+  color: #777;
+  text-transform: uppercase;
+  text-decoration: none;
+  front-size: 20px;
+}
+
+nav a:hover{
+  color: #000; 
+}
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color:#444
+  position:absolute;
+  top:0;
+  width:0%;  
+  transition:all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width:100%;
+}
+
+.resume{
+  background:black;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:34px;
+  font-size:14px;
+  padding:0 2em;
+  cursor:pointer;
+  margin-top:35px;
+  transition:800ms ease all;
+  outline:none;
+}
+
+.resume:hover{
+  background:#fff;
+  color:black;
+}
+
+.resume:before,.resume:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2.0px;
+  width:0;
+  background: black;
+  transition:400ms ease all;
+}
+
+.resume:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.resume:hover:before,.resume:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.resume:focus{
+  outline: 0;
+}
+
+
+.hide_small{
+  display:none!important
+}
+
+/*Social Media Icons*/
+.social_media{  
+  font-size: 30px;
+  text-align: center;
+  padding: 5px;  
+  position: absolute; 
+  top: 900px;
+}
+
+
+.fa-facebook{
+  color: #3b5998;
+  outline: none;
+  margin-left: 100px;
+}
+
+.fa-github{
+  color: black;
+  margin-left: 140px;
+}
+
+.fa-linkedin{
+  color: #0077B5;
+  margin-left: 180px;
+}
+
+.fa-instagram{
+  color: #C13584;
+  margin-left: 220px;
+}
